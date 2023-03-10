@@ -9,7 +9,7 @@
 
 ## About me ##
 
-I am web disigner. I create websites for Wordpress and Joomla, make designs in figma.
+I am freelancer web disigner. I create websites for Wordpress and Joomla, make designs in figma.
 I was tired of working alone and I wanted to join a team as a frontend worker. I realized that my knowledge wasn't enough for this, so I need to learn the latest technologies based on JS. 
 That's why I came to this course.
 
