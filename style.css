@@ -38,8 +38,120 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
+table{
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a{
+    text-decoration: none;
+		color:inherit;
+}
 /* end reset style */
+*{
+  -webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+/*variables*/
+:root {
+  --color-primary: #b0e0e6;
+	--secondary-color:#F0F8FF;
+}
+body{	
+	background-color: #fff;
+	font-family: 'Lora', serif;
+}
+p{
+	line-height: 1.2rem;
+}
+.page-wrapper{
+	max-width: 1240px;
+	margin: 0px auto;
+}
+header, main, .empty-container{	
+	display: grid;
+  grid-template-columns: 1fr 2fr;
+	position: relative;
+}
+main ul {
+	margin-left: 2rem;
+}
+.about p{
+	margin-left: 2rem;
+}
+section{
+	margin-bottom: 3rem;
+}
+.header{
+	align-items: center;
+}
+.header__avatar{
+	width: max-content;
+	height: 240px;
+	margin: auto;
+	border-radius: 100%;
+	overflow: hidden;
+	border: solid 1em #fff
+}
+.empty-container .column{
+	height: 2rem;
+}
+.column{
+	padding: 1rem 2rem;
+}
+.column_left{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.top-row, .column_left{
+	background-color: var(--secondary-color);
+}
+h1{
+	font-size: 5rem;
+}
+h2{
+	font-size: 2rem;
+	padding-bottom: 1.5rem;
+}
+.header__subtitle{
+	font-size: 1.5rem;
+}
+.nav{
+	margin-top: 2rem;
+}
+.nav__list{
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+}
+.nav__link{
+	display: block;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	border: 1px solid var(--color-primary);
+}
+.nav__link:hover, .nav__link:active{
+	background: #fff;	
+}
+.works-list__item{
+	margin-bottom: 2rem;
+}
+.works-list__title{
+	font-size: 1.5rem;
+  padding-bottom: 0.4rem;
+}
+.works-list__info{
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.8rem;
+}
+.works-list__data, .education__data{
+	margin-right: 1rem;	
+	display: inline-block;
+	padding: 0.2rem 0.5rem;
+	border-radius: 0.25rem;
+	background: var(--color-primary);	
+}
