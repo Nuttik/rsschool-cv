@@ -67,6 +67,9 @@ a{
 	--color-link:#0078d7;
 	--color-link-active:#008eff;
 }
+html {
+	scroll-behavior: smooth;
+}
 body{	
 	background-color: #fff;
 	font-family: 'Lora', serif;
