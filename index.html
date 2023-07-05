@@ -51,7 +51,7 @@
       </header>
     </div>
   </div>
-      <div class="page-wrapper">
+    <div class="page-wrapper">
       <main class="main">
         <div class="column column_left">           
           <aside>
@@ -310,15 +310,16 @@
               <h2>Code example</h2>
               <p>Ката from codewars “N-th Fibonacci”:</p>
               <blockquote>
-                I love Fibonacci numbers in general, but I must admit I love some more than others. I would like for you to write me a function that, when given a number n (n >= 1 ), returns the nth number in the Fibonacci Sequence..</blockquote>
+                I love Fibonacci numbers in general, but I must admit I love some more than others. I would like for you to write me a function that, when given a number n (n >= 1 ), returns the nth number in the Fibonacci Sequence..
+              </blockquote>
               <h3>My solution</h3>
               <pre class="code__exemple">
               <code>
                 function nthFibo(n){  
                   let sequence = [0];
-                  if(n > 1 ){
+                  if(n &gt; 1 ){
                     sequence.push(1);
-                    for( let i = 2; i < n; i++){
+                    for( let i = 2; i &lt; n; i++){
                       sequence.push(sequence[i-2] + sequence[i-1]);
                     } 
                   }
@@ -329,5 +330,6 @@
           </section>
         </div>        
       </main>
+    </div>
   </body>
 </html>
