@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* reset style */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -49,9 +56,7 @@ a{
 /* end reset style */
 *{
   -webkit-transition: all 0.3s linear;
-	-moz-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
-	-ms-transition: all 0.3s linear;
 	transition: all 0.3s linear;
 }
 /*variables*/
@@ -91,7 +96,9 @@ h3{
 	margin: 0px auto;
 }
 header, main, .empty-container{	
+	display: -ms-grid;	
 	display: grid;
+  -ms-grid-columns: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
 	position: relative;
 }
@@ -111,9 +118,13 @@ section{
 	margin-bottom: 3rem;
 }
 .header{
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .header__avatar{
+	width: -webkit-max-content;
+	width: -moz-max-content;
 	width: max-content;
 	height: 240px;
 	margin: auto;
@@ -129,9 +140,16 @@ section{
 	padding: 1rem 2rem;
 }
 .column_left{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .top-row, .column_left{
 	background-color: var(--color-secondary);
@@ -143,9 +161,15 @@ section{
 	margin-top: 2rem;
 }
 .nav__list{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-  align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .nav__link{
 	display: block;
@@ -169,8 +193,12 @@ section{
   padding-bottom: 0.6rem;
 }
 .works-list__info{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin-bottom: 0.8rem;
 }
 .works-list__data, .education__data{
@@ -207,12 +235,18 @@ code{
 	width: 240px;
 }
 .contacts__itema{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .contacts__link{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .skills__skill{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 0.4rem;
   height: 2rem;
@@ -222,16 +256,24 @@ code{
 	height: 100%;
 }
 .contacts__icon, .skills__icon{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin-right: 1rem;
 }
 .skills__skill-title{
 	width: 80px;
 }
 .skills__skill-rank{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin: 0;
 }
 .skills__level{
@@ -253,6 +295,8 @@ code{
 	background-color: #eeeeee;
 }
 .languages__item{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .languages__icon{
