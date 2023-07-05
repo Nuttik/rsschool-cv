@@ -57,14 +57,34 @@ a{
 /*variables*/
 :root {
   --color-primary: #b0e0e6;
-	--secondary-color:#F0F8FF;
+	--color-secondary:#F0F8FF;
+	--color-text:#1a1a1a;
+	--color-link:#0078d7;
+	--color-link-active:#008eff;
 }
 body{	
 	background-color: #fff;
 	font-family: 'Lora', serif;
+	color: var(--color-text);
 }
 p{
-	line-height: 1.2rem;
+	line-height: 1.5rem;
+}
+
+a:hover, a:active{
+	color:var(--color-link-active);
+}
+
+h1{
+	font-size: 5rem;
+}
+h2{
+	font-size: 2rem;
+	padding-bottom: 1.5rem;
+}
+h3{
+	font-size: 1.5rem;
+	padding-bottom: 1.2rem;
 }
 .page-wrapper{
 	max-width: 1240px;
@@ -78,8 +98,14 @@ header, main, .empty-container{
 main ul {
 	margin-left: 2rem;
 }
-.about p{
+.about p, .code p, .code h3{
 	margin-left: 2rem;
+}
+blockquote{
+	margin-left: 2rem;
+  padding: 0.5rem 1rem;
+  font-style: italic;
+	margin-bottom: 1.5rem;
 }
 section{
 	margin-bottom: 3rem;
@@ -93,7 +119,8 @@ section{
 	margin: auto;
 	border-radius: 100%;
 	overflow: hidden;
-	border: solid 1em #fff
+	border: solid 1em #fff;
+	outline: solid 1px var(--color-primary);
 }
 .empty-container .column{
 	height: 2rem;
@@ -107,14 +134,7 @@ section{
 	justify-content: space-between;
 }
 .top-row, .column_left{
-	background-color: var(--secondary-color);
-}
-h1{
-	font-size: 5rem;
-}
-h2{
-	font-size: 2rem;
-	padding-bottom: 1.5rem;
+	background-color: var(--color-secondary);
 }
 .header__subtitle{
 	font-size: 1.5rem;
@@ -131,17 +151,22 @@ h2{
 	display: block;
 	padding: 0.5rem;
 	border-radius: 0.25rem;
+	background: #fff;
 	border: 1px solid var(--color-primary);
 }
 .nav__link:hover, .nav__link:active{
-	background: #fff;	
+	background: var(--color-primary);	
+	color: inherit;
 }
-.works-list__item{
+.about{
+	margin-top: 1rem;
+}
+.works-list__item, .education__item{
 	margin-bottom: 2rem;
 }
 .works-list__title{
 	font-size: 1.5rem;
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.6rem;
 }
 .works-list__info{
 	display: flex;
@@ -154,4 +179,85 @@ h2{
 	padding: 0.2rem 0.5rem;
 	border-radius: 0.25rem;
 	background: var(--color-primary);	
+}
+.education__data{
+	margin-bottom: 0.8rem;
+}
+.works__list{
+	list-style: disc;
+	line-height: 1.5rem;
+	font-weight: bold;
+}
+.works__link{
+	color:var(--color-link);
+}
+code{
+	font-family: monospace;
+}
+.code__exemple{
+	background: #fff;
+	border-radius: 8px;
+	margin-left: -6rem;
+	border: 1px solid var(--color-primary);
+}
+.column_left li{
+	line-height: 2rem;
+}
+.footer__logo img{
+	width: 240px;
+}
+.contacts__itema{
+	display: flex;
+}
+.contacts__link{
+	display: flex;
+}
+.skills__skill{
+	display: flex;
+	margin-bottom: 0.4rem;
+  height: 2rem;
+  overflow: hidden;
+}
+.skills__icon svg{
+	height: 100%;
+}
+.contacts__icon, .skills__icon{
+	display: flex;
+	align-items: center;
+	margin-right: 1rem;
+}
+.skills__skill-title{
+	width: 80px;
+}
+.skills__skill-rank{
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+.skills__level{
+	height: 0.4rem;
+	width: 2rem;
+	background-color: var(--color-primary);
+}
+.skills__level:first-child{
+	border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    overflow: hidden;
+}
+.skills__level:last-child{
+	border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+}
+.skills__level_disable{
+	background-color: #eeeeee;
+}
+.languages__item{
+	display: flex;
+}
+.languages__icon{
+	margin-right: 1rem;
+}
+.footer__copyrigth{
+	margin-top: 2rem;
 }
