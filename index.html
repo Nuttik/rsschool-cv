@@ -405,13 +405,13 @@
           <h3>My solution</h3>
           <pre class="code__exemple">
               <code>
-                function nthFibo(n){  
+                function nthFibo(n){
                   let sequence = [0];
                   if(n &gt; 1 ){
                     sequence.push(1);
                     for( let i = 2; i &lt; n; i++){
                       sequence.push(sequence[i-2] + sequence[i-1]);
-                    } 
+                    }
                   }
                   return sequence[sequence.length-1];
                 }
